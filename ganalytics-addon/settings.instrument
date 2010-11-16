@@ -1,0 +1,38 @@
+<?php
+/**
+* Orchestra Settings
+*
+* Used for filing on the OrchestraMVC website.
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+$instrument = array(
+	'title' 				=> 'ganalytics-addon',
+	'teaser'				=> 'Add Google Analytics to your orchestra app',
+	'description'		=> 'This adds Google Analytics to your site anywhere you would like it.'
+	'category'			=> 'analytics',
+	'copyright'			=> 'Christopher Hein',
+	'license'				=> 'MIT',
+	'version'				=> '0.0.1',
+	'link'					=> 'http://orchestramvc.chrishe.in/instruments/ganalytics-addon',
+	'author'				=> 'Christopher Hein',
+	'author-link'		=> 'http://chrishe.in',
+	'author-email'	=> 'me@chrishe.in'
+	'files'					=> array(
+												'README',
+												'install',
+												'ganalytics-addon.php',
+												'settings.instrument',
+												'./docs/ganalytics-addon.html',
+												'./files/jquery.ganalytics.js',
+												'./images/',
+											)
+);
