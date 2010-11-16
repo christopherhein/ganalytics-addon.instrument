@@ -32,7 +32,7 @@ $instrument = array(
 												'ganalytics-addon.php',
 												'settings.instrument',
 												'./docs/ganalytics-addon.html',
-												'./files/jquery.ganalytics.js',
+												'./files/ganalytics.php',
 												'./images/',
 											)
 );

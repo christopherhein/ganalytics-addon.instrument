@@ -3,18 +3,15 @@ Ganalytics-Addon Instrument
 
 Finish installation by adding this to your config/boot.php
 
-require(LIB.'addons/twitter.php');
+require(LIB.'addons/ganalytics.php');
 
 than add this to your lib/framework/views.php inside the render() method
 
-$twitter = New Twitter(array(
-  'username' => 'your username',
-  'avatar_size' => 48,
-  'count' => 5,
-  'loading_text' => 'Loading Tweets...',
-  'id' => 'core-tweets'
+$ganalytics = New Ganalytics(array(
+	'account_id' => 'your account code',
+	'site' => 'domain'
 ));
 
 and last enter this in your .html.orc
 
-<?= $twitter->feed(); ?>
+<?= $ganalytics->scripts(); ?>

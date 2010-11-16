@@ -18,12 +18,8 @@
 $path = getcwd();
 $name = "ganalytics-addon";
 $addons = "/lib/addons/";
-$css = "/frontend/stylesheets/";
-$js = "/frontend/javascripts/";
 $files = array(
-	'twitter.php',
-	'tweet.css',
-	'jquery.tweet.js'
+	'ganalytics.php'
 );
 
 	// Variables
