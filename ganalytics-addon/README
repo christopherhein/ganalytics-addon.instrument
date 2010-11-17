@@ -1,17 +1,24 @@
-/* ----------------------- */
+--------------------------------------
+
 Ganalytics-Addon Instrument
 
-Finish installation by adding this to your config/boot.php
+To finish the installation and use this instrument you have a few more steps to take:
 
-require(LIB.'addons/ganalytics.php');
+  1) Add the following to config/boot.php in the // Framework Section
+  
+      require(LIB.'addons/ganalytics.php');
+  
+  2) Add the following before "$hooks = New Hooks();" 
 
-than add this to your lib/framework/views.php inside the render() method
+      $core['ganalytics'] = New Ganalytics(array(
+      	'account_id' => 'your account code',
+      	'site' => 'domain'
+      ));
 
-$ganalytics = New Ganalytics(array(
-	'account_id' => 'your account code',
-	'site' => 'domain'
-));
+  3) Lastly Add this right before the </body>
 
-and last enter this in your .html.orc
+      <?= $ganalytics->scripts(); ?>
 
-<?= $ganalytics->scripts(); ?>
+Enjoy!
+
+--------------------------------------

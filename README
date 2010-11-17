@@ -1,1 +1,33 @@
-This is an Instrument File for adding you Google Analytics Code to your Orchestra App
+/**
+* Orchestra Ganalytics-addon 
+*
+* Add the ganalytics-addon instrument to easily add Google Analytics to any section of your Orchestra MVC Apps 
+*
+* Licensed under the MIT license.
+*
+* @category   Orchestra
+* @copyright  Copyright (c) 2010, Christopher Hein
+* @license    http://orchestramvc.chrishe.in/license
+* @version    Release: 0.0.1:beta
+* @link       http://orchestramvc.chrishe.in/
+*
+*/
+
+------------------------------------------------------
+What:
+This is an instrument file for adding Google Analytics to your Orchestra Apps.
+This adds helper methods for adding Google Analytics to any section of your App.
+
+Installation:
+First you must have already installed the sys_orchestra (https://github.com/christopherhein/system-orchestra-mvc)
+If that is installed use:
+
+  $ instrument pull ganalytics-addon
+  
+This with build the instrument locally in /usr/local/orchestra/instruments/ once that is complete you can use:
+
+  $ instrument install ganalytics-addon
+  
+from the root directory of any Orchestra App and it will install all the necessary files, plus walk you through any additional steps.
+
+Enjoy!
